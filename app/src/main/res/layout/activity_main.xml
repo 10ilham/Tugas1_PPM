@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/textview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INPUT"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingTop="10dp"/>
+<!--NIM-->
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/textview1"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NIM : "
+            android:textSize="7pt"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical" />
+
+        <EditText
+            android:id="@+id/isinim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan NIM Mahasiswa"
+            android:inputType="number"
+            android:paddingLeft="5dp"
+            android:background="@drawable/edit" />
+
+    </LinearLayout>
+
+<!--    NAMA-->
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/layout1"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama : "
+            android:textSize="7pt"
+            android:textColor="@color/black"
+            android:gravity="center_vertical" />
+
+        <EditText
+            android:id="@+id/isinama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Nama Mahasiswa"
+            android:paddingLeft="5dp"
+            android:background="@drawable/edit" />
+    </LinearLayout>
+
+<!--    JENIS KELAMIN-->
+    <!-- JENIS KELAMIN -->
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/layout2"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin : "
+            android:textSize="7pt"
+            android:paddingTop="12dp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical" />
+
+        <RadioGroup
+            android:id="@+id/radiogrup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdb1"
+                android:textSize="7pt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laki-laki"
+                android:checked="false" />
+
+            <RadioButton
+                android:id="@+id/rdb2"
+                android:textSize="7pt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perempuan"
+                android:checked="false" />
+        </RadioGroup>
+    </LinearLayout>
+
+<!--    KELAS-->
+    <LinearLayout
+        android:id="@+id/layout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/layout3"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kelas : "
+            android:textSize="7pt"
+            android:textColor="@color/black"
+            android:gravity="center_vertical" />
+
+        <EditText
+            android:id="@+id/isikelas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Kelas Mahasiswa"
+            android:paddingLeft="5dp"
+            android:background="@drawable/edit" />
+    </LinearLayout>
+
+<!--    MATA KULIAH-->
+    <LinearLayout
+        android:id="@+id/layout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/layout4"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mata Kuliah : "
+            android:textSize="7pt"
+            android:textColor="@color/black"
+            android:gravity="center_vertical" />
+
+        <EditText
+            android:id="@+id/isimatkul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Nama MataKuliah"
+            android:paddingLeft="5dp"
+            android:background="@drawable/edit" />
+    </LinearLayout>
+
+<!--    UTS-->
+    <LinearLayout
+        android:id="@+id/layout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/layout5"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UAS : "
+            android:textSize="7pt"
+            android:textColor="@color/black"
+            android:gravity="center_vertical" />
+
+        <EditText
+            android:id="@+id/isiuas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Masukkan Nilai UAS Mahasiswa"
+            android:paddingLeft="5dp"
+            android:background="@drawable/edit" />
+    </LinearLayout>
+
+<!--    UTS-->
+    <LinearLayout
+        android:id="@+id/layout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/layout6"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UTS : "
+            android:textSize="7pt"
+            android:textColor="@color/black"
+            android:gravity="center_vertical" />
+
+        <EditText
+            android:id="@+id/isiuts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Masukkan Nilai UTS Mahasiswa"
+            android:paddingLeft="5dp"
+            android:background="@drawable/edit" />
+    </LinearLayout>
+
+<!--    LAIN LAIN-->
+    <LinearLayout
+        android:id="@+id/layout8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/layout7"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lain-Lain : "
+            android:textSize="7pt"
+            android:textColor="@color/black"
+            android:gravity="center_vertical" />
+
+        <EditText
+            android:id="@+id/isilain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Masukkan Nilai Lain-lain Mahasiswa"
+            android:paddingLeft="5dp"
+            android:background="@drawable/edit" />
+    </LinearLayout>
+
+<!--    BUTTON PROSES-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proses"
+        android:layout_below="@id/layout8"
+        android:id="@+id/btn_proses"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:onClick="hasil">
+    </Button>
+</RelativeLayout>
